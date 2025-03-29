@@ -3886,6 +3886,7 @@ namespace mpco {
 					elem_class_tag == ELE_TAG_ElastomericBearingUFRP3d ||
 					elem_class_tag == ELE_TAG_ElastomericX ||
 					elem_class_tag == ELE_TAG_HDR ||
+					elem_class_tag == ELE_TAG_BoucWenHDRB ||
 					elem_class_tag == ELE_TAG_LeadRubberX ||
 					// ./ulBeamColumn
 					/*warning: these two could go to the beam with custom integration rule, but they do not define everything properly! check in future versions */

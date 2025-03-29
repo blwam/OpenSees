@@ -143,6 +143,7 @@ extern void *OPS_PML2DVISCOUS(void);
 extern void *OPS_CorotTruss2(void);
 extern void *OPS_ZeroLengthImpact3D(void);
 extern void *OPS_HDR(void);
+extern void* OPS_BoucWenHDRB(void);
 extern void *OPS_LeadRubberX(void);
 extern void *OPS_ElastomericX(void);
 extern void *OPS_N4BiaxialTruss(void);
@@ -823,6 +824,16 @@ TclModelBuilderElementCommand(ClientData clientData, Tcl_Interp *interp,
       opserr << "TclElementCommand -- unable to create element of type : " << argv[1] << endln;
       return TCL_ERROR;
     }
+
+  } else if (strcmp(argv[1], "BoucWenHDRB") == 0) {
+
+      void* theEle = OPS_BoucWenHDRB();
+      if (theEle != 0)
+          theElement = (Element*)theEle;
+      else {
+          opserr << "TclElementCommand -- unable to create element of type : " << argv[1] << endln;
+          return TCL_ERROR;
+      }
 
   } else if (strcmp(argv[1],"LeadRubberX") == 0) {
     

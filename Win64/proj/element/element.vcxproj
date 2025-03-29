@@ -219,6 +219,7 @@
     <ClCompile Include="..\..\..\SRC\element\elasticBeamColumn\ElasticBeamWarping3d.cpp" />
     <ClCompile Include="..\..\..\SRC\element\elasticBeamColumn\ModElasticBeam3d.cpp" />
     <ClCompile Include="..\..\..\SRC\element\elasticBeamColumn\WheelRail.cpp" />
+    <ClCompile Include="..\..\..\SRC\element\elastomericBearing\BoucWenHDRB.cpp" />
     <ClCompile Include="..\..\..\SRC\element\elastomericBearing\ElastomericBearingBoucWenMod3d.cpp" />
     <ClCompile Include="..\..\..\SRC\element\Element.cpp" />
     <ClCompile Include="..\..\..\SRC\element\ElementalLoad.cpp" />
@@ -535,6 +536,7 @@
     <ClInclude Include="..\..\..\SRC\element\elasticBeamColumn\ElasticBeamWarping3d.h" />
     <ClInclude Include="..\..\..\SRC\element\elasticBeamColumn\ModElasticBeam3d.h" />
     <ClInclude Include="..\..\..\SRC\element\elasticBeamColumn\WheelRail.h" />
+    <ClInclude Include="..\..\..\SRC\element\elastomericBearing\BoucWenHDRB.h" />
     <ClInclude Include="..\..\..\SRC\element\elastomericBearing\ElastomericBearingBoucWenMod3d.h" />
     <ClInclude Include="..\..\..\SRC\element\Element.h" />
     <ClInclude Include="..\..\..\SRC\element\ElementalLoad.h" />
