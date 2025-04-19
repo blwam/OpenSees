@@ -1165,6 +1165,7 @@ VTK_Recorder::setVTKType()
     vtktypes[ELE_TAG_RJWatsonEQS2d] = VTK_LINE;
     vtktypes[ELE_TAG_RJWatsonEQS3d] = VTK_LINE;
     vtktypes[ELE_TAG_HDR] = VTK_LINE;
+    vtktypes[ELE_TAG_BoucWenLRB] = VTK_LINE;
     vtktypes[ELE_TAG_ElastomericX] = VTK_LINE;
     vtktypes[ELE_TAG_LeadRubberX] = VTK_LINE;
     vtktypes[ELE_TAG_PileToe3D] = VTK_POLY_VERTEX;

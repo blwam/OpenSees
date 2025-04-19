@@ -473,6 +473,7 @@
 #include "elastomericBearing/ElastomericBearingUFRP2d.h"
 #include "elastomericBearing/ElastomericX.h"
 #include "elastomericBearing/HDR.h"
+#include "elastomericBearing/BoucWenLRB.h"
 #include "elastomericBearing/LeadRubberX.h"
 
 #include "frictionBearing/FlatSliderSimple2d.h"
@@ -1182,6 +1183,9 @@ FEM_ObjectBrokerAllClasses::getNewElement(int classTag)
       
     case ELE_TAG_HDR:
       return new HDR();
+
+	case ELE_TAG_BoucWenLRB:
+		return new BoucWenLRB();
       
     case ELE_TAG_LeadRubberX:
       return new LeadRubberX();
