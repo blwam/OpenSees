@@ -1412,6 +1412,7 @@ GmshRecorder::setGMSHType()
     gmshtypes[ELE_TAG_RJWatsonEQS2d] = GMSH_LINE;
     gmshtypes[ELE_TAG_RJWatsonEQS3d] = GMSH_LINE;
     gmshtypes[ELE_TAG_HDR] = GMSH_LINE;
+    gmshtypes[ELE_TAG_BoucWenLRB] = GMSH_LINE;
     gmshtypes[ELE_TAG_ElastomericX] = GMSH_LINE;
     gmshtypes[ELE_TAG_LeadRubberX] = GMSH_LINE;
     gmshtypes[ELE_TAG_PileToe3D] = GMSH_POLY_VERTEX;

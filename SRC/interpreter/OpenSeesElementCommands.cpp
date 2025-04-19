@@ -98,6 +98,7 @@ void* OPS_FPBearingPTV();
 void* OPS_TripleFrictionPendulum();
 void* OPS_TripleFrictionPendulumX();
 void* OPS_HDR();
+void* OPS_BoucWenLRB();
 void* OPS_LeadRubberX();
 void* OPS_ElastomericX();
 void* OPS_MVLEM();
@@ -726,6 +727,7 @@ namespace {
 	functionMap.insert(std::make_pair("TripleFrictionPendulum", &OPS_TripleFrictionPendulum));
 	functionMap.insert(std::make_pair("TripleFrictionPendulumX", &OPS_TripleFrictionPendulumX));
 	functionMap.insert(std::make_pair("HDR", &OPS_HDR));
+    functionMap.insert(std::make_pair("BoucWenLRB", &OPS_BoucWenLRB));
 	functionMap.insert(std::make_pair("LeadRubberX", &OPS_LeadRubberX));
 	functionMap.insert(std::make_pair("ElastomericX", &OPS_ElastomericX));
 	functionMap.insert(std::make_pair("MVLEM", &OPS_MVLEM2d3d));
