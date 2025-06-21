@@ -819,9 +819,9 @@ int BoucWenLRB::revertToStart()
 
 
     // reset tangent of hysteretic evolution parameters
-    dz1du(0, 0) = dz1du(1, 1) = alpha1;
+    dz1du(0, 0) = dz1du(1, 1) = alpha1 / uy;
     dz1du(1, 0) = dz1du(0, 1) = 0.0;
-    dz2du(0, 0) = dz2du(1, 1) = alpha2;
+    dz2du(0, 0) = dz2du(1, 1) = alpha2 / uy;
     dz2du(1, 0) = dz2du(0, 1) = 0.0;
 
     // reset stiffness matrix in basic system
@@ -1383,11 +1383,11 @@ int BoucWenLRB::recvSelf(int commitTag, Channel& rChannel,
     }
 
     // receive remaining data
-    if ((int)data(26) == 3) {
+    if ((int)data(27) == 3) {
         x.resize(3);
         rChannel.recvVector(0, commitTag, x);
     }
-    if ((int)data(27) == 3) {
+    if ((int)data(28) == 3) {
         y.resize(3);
         rChannel.recvVector(0, commitTag, y);
     }
